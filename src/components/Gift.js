@@ -15,16 +15,18 @@ class Gift extends Component {
             <div className='gift'>
                 <Form>
                     <Form.Group>
-                        <Form.Label>Person</Form.Label>
+                        <Form.Label>Person:</Form.Label>
                         <Form.Control 
                             className='input-person'
+                            placeHolder='Enter name of recipient here'
                             onChange={event => this.setState({ person: event.target.value})}
                         />
                     </Form.Group>
                     <Form.Group>
-                        <Form.Label>Present</Form.Label>
+                        <Form.Label>Present:</Form.Label>
                         <Form.Control
                             className='input-present'
+                            placeHolder='Enter your planned gift here'
                             onChange={event => this.setState({ present: event.target.value})}
                         />
                     </Form.Group>

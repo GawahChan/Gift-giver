@@ -1,15 +1,8 @@
 body {
     text-align: center;
     padding: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.gift {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    margin: 20px;
-    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .App {
@@ -18,6 +11,28 @@ body {
     padding: 30px;
 }
 
-Button {
-    margin: 10px;
+.gift {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.gift:hover {
+    animation: pulse 7s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.05)
+    }
+
+    100% {
+        transform: scale(1)
+    }
 }

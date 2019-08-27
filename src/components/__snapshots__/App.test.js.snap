@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders correctly 1`] = `
-<div>
+<div
+  className="App"
+>
   <h1>
     Gift Giver
   </h1>
   <p>
-    Keeping track of your gift list here: 
+    Forever keeping track of your gift list and making sure you don't forget your loved ones
   </p>
   <div
     className="gift-list"
