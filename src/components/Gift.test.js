@@ -4,8 +4,12 @@ import Gift from './Gift';
 import rendered from 'react-test-renderer';
 
 describe('Gift', () => {
-    const giftRendered = rendered.create(<Gift />).toJSON();
-    const gift = shallow(<Gift />);
+    const mockRemove = jest.fn();
+    const id = 1;
+    const props = { gift: { id }, removeGift: mockRemove };
+
+    const gift = shallow(<Gift {...props} />);
+    const giftRendered = rendered.create(<Gift {...props} />).toJSON();
 
     it('renders correctly', () => {
         expect(giftRendered).toMatchSnapshot();
@@ -36,6 +40,16 @@ describe('Gift', () => {
 
         it('updates the present in `state`', () => {
             expect(gift.state().present).toEqual(present);
+        });
+    });
+
+    describe('when clicking the `remove gift` button', () => {
+        beforeEach(() => {
+            gift.find('.btn-remove').simulate('click');
+        });
+
+        it('calls the removeGift callback', () => {
+            expect(mockRemove).toHaveBeenCalledWith(id);
         });
     });
 });

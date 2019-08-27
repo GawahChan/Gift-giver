@@ -32,5 +32,13 @@ exports[`Gift renders correctly 1`] = `
       />
     </div>
   </form>
+  <button
+    className="btn-remove btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Remove Gift
+  </button>
 </div>
 `;
