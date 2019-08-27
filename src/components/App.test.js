@@ -4,19 +4,32 @@ import App from './App';
 
 import renderer from 'react-test-renderer';
 
-const appRendered = renderer.create(<App />).toJSON();
-const app = shallow(<App />)
+describe('App', () => {
+    const appRendered = renderer.create(<App />).toJSON();
+    const app = shallow(<App />)
 
-it('renders without crashing', () => {
-    expect(appRendered).toMatchSnapshot();
-});
+    it('renders correctly', () => {
+        expect(appRendered).toMatchSnapshot();
+    });
 
-it('initializes the `state` with an empty list of gifts', () => {
-    expect(app.state().gifts).toEqual([]);
-});
+    it('initializes the `state` with an empty list of gifts', () => {
+        expect(app.state().gifts).toEqual([]);
+    });
 
-it('adds a new gift to `state` when clicking the `add gift` button', () => {
-    app.find('.btn-add').simulate('click');
+    describe('when clicking the `add-gift` button', () => {
+        beforeEach(() => {
+            app.find('.btn-add').simulate('click');
+        });
+        afterEach(() => {
+            app.setState({ gifts: [] });
+        });
 
-    expect(app.state().gifts).toEqual([{id: 1}]);
+        it('adds a new gift to `state`', () => {
+            expect(app.state().gifts).toEqual([{ id: 1 }]);
+        });
+
+        it('adds a new gift to the rendered list', () => {
+            expect(app.find('.gift-list').children().length).toEqual(1);
+        });
+    });
 });
