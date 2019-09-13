@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Gift-giver/static/css/main.d3eb6a4c.chunk.css",
-    "main.js": "/Gift-giver/static/js/main.514b02c0.chunk.js",
-    "main.js.map": "/Gift-giver/static/js/main.514b02c0.chunk.js.map",
+    "main.css": "/Gift-giver/static/css/main.971b706a.chunk.css",
+    "main.js": "/Gift-giver/static/js/main.e9a1ca5f.chunk.js",
+    "main.js.map": "/Gift-giver/static/js/main.e9a1ca5f.chunk.js.map",
     "runtime~main.js": "/Gift-giver/static/js/runtime~main.fc5271c6.js",
     "runtime~main.js.map": "/Gift-giver/static/js/runtime~main.fc5271c6.js.map",
-    "static/js/2.42bbabb9.chunk.js": "/Gift-giver/static/js/2.42bbabb9.chunk.js",
-    "static/js/2.42bbabb9.chunk.js.map": "/Gift-giver/static/js/2.42bbabb9.chunk.js.map",
+    "static/js/2.8bf46769.chunk.js": "/Gift-giver/static/js/2.8bf46769.chunk.js",
+    "static/js/2.8bf46769.chunk.js.map": "/Gift-giver/static/js/2.8bf46769.chunk.js.map",
     "index.html": "/Gift-giver/index.html",
-    "precache-manifest.73612e59f20754ccd43fbd209db81369.js": "/Gift-giver/precache-manifest.73612e59f20754ccd43fbd209db81369.js",
+    "precache-manifest.361040d50f331f334ebc0ab9d0cf0ccc.js": "/Gift-giver/precache-manifest.361040d50f331f334ebc0ab9d0cf0ccc.js",
     "service-worker.js": "/Gift-giver/service-worker.js",
-    "static/css/main.d3eb6a4c.chunk.css.map": "/Gift-giver/static/css/main.d3eb6a4c.chunk.css.map"
+    "static/css/main.971b706a.chunk.css.map": "/Gift-giver/static/css/main.971b706a.chunk.css.map"
   }
 }
