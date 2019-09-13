@@ -13,7 +13,7 @@ exports[`Gift renders correctly 1`] = `
       <label
         className="form-label"
       >
-        Person
+        Person:
       </label>
       <input
         className="input-person form-control"
@@ -27,7 +27,7 @@ exports[`Gift renders correctly 1`] = `
       <label
         className="form-label"
       >
-        Present
+        Present:
       </label>
       <input
         className="input-present form-control"
@@ -36,6 +36,14 @@ exports[`Gift renders correctly 1`] = `
       />
     </div>
   </form>
+  <div
+    className="gift-checkbox"
+  >
+    <input
+      type="checkbox"
+    />
+     Completed
+  </div>
   <button
     className="btn-remove btn btn-primary"
     disabled={false}

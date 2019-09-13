@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Gift from './Gift';
+import Gift from '../components/Gift/Gift';
 import rendered from 'react-test-renderer';
 
 describe('Gift', () => {

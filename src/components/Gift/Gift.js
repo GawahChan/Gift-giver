@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import './Gift.css';
 
 class Gift extends Component {
     constructor() {
@@ -31,6 +32,9 @@ class Gift extends Component {
                         />
                     </Form.Group>
                 </Form>
+                    <div className='gift-checkbox'>
+                        <input type='checkbox' /> Completed
+                    </div>
                 <Button 
                     className='btn-remove'
                     onClick={() => this.props.removeGift(this.props.gift.id)}
